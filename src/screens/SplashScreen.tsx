@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { View, Image } from "react-native";
-import { commonStyles } from "../../styles/commonStyles";
-import { navigate } from "../../utils/NavigationUtil";
+import { commonStyles } from "../styles/commonStyles";
+import { navigate } from "../utils/NavigationUtil";
 
 const SplashScreen = () => {
 
@@ -16,7 +16,7 @@ const SplashScreen = () => {
 
     return (
         <View style={commonStyles.container}>
-            <Image style={commonStyles.img} source={require("../../assets/images/logo_text.png")} />
+            <Image style={commonStyles.img} source={require("../assets/images/logo_text.png")} />
         </View>
     );
 };
