@@ -5,6 +5,8 @@ import HomeHeader from "../components/home/HomeHeader";
 import { ScrollView } from "react-native";
 import SendReceiveButton from "../components/home/SendReceiveButton";
 import Options from "../components/home/Options";
+import Misc from "../components/global/Misc";
+import AbsoluteQRBottom from "../components/home/AbsoluteQRBottom";
 
 const HomeScreen: FC = () => {
     return (
@@ -13,7 +15,9 @@ const HomeScreen: FC = () => {
             <ScrollView contentContainerStyle={{ paddingBottom: 100, padding: 15 }} showsVerticalScrollIndicator={false}>
                 <SendReceiveButton />
                 <Options isHome={true} />
+                <Misc />
             </ScrollView>
+            <AbsoluteQRBottom />
         </View>
     );
 };
